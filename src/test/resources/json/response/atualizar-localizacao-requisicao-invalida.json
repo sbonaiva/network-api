@@ -1,0 +1,10 @@
+{
+  "mensagem": "Requisição inválida",
+  "campos": [
+    "Latitude é obrigatória",
+    "Longitude é obrigatória",
+    "Galáxia é obrigatório"
+  ],
+  "codigo": 400,
+  "erro": "Bad Request"
+}

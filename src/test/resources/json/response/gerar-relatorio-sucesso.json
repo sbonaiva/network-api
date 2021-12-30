@@ -1,0 +1,12 @@
+{
+  "totalSoldados": 4,
+  "porcentagemDeTraidores": 25.0,
+  "porcentagemDeRebeldes": 75.0,
+  "pontosPerdidosPorTraidores": 40,
+  "mediaDeRecursosPorRebelde": {
+    "arma": 10.0,
+    "comida": 0.0,
+    "municao": 0.0,
+    "agua": 0.0
+  }
+}

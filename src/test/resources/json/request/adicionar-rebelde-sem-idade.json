@@ -1,0 +1,19 @@
+{
+  "nome": "João",
+  "genero": "M",
+  "localizacao": {
+    "galaxia": "xpto",
+    "latitude": -22.143766,
+    "longitude": -22.143766
+  },
+  "inventario": [
+    {
+      "item": "comida",
+      "quantidade": 10
+    },
+    {
+      "item": "arma",
+      "quantidade": 15
+    }
+  ]
+}

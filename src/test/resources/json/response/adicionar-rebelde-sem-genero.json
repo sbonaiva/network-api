@@ -1,0 +1,8 @@
+{
+  "mensagem": "Requisição inválida",
+  "campos": [
+    "Gênero é obrigatório"
+  ],
+  "codigo": 400,
+  "erro": "Bad Request"
+}

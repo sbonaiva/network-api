@@ -1,0 +1,8 @@
+{
+  "mensagem": "Requisição inválida",
+  "campos": [
+    "Inventário não pode estar vazio"
+  ],
+  "codigo": 400,
+  "erro": "Bad Request"
+}

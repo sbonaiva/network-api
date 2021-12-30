@@ -1,0 +1,15 @@
+{
+  "nome": "João",
+  "idade": 10,
+  "genero": "M",
+  "inventario": [
+    {
+      "item": "comida",
+      "quantidade": 10
+    },
+    {
+      "item": "arma",
+      "quantidade": 15
+    }
+  ]
+}

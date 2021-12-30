@@ -1,0 +1,8 @@
+{
+  "mensagem": "Requisição inválida",
+  "campos": [
+    "Localização é obrigatório"
+  ],
+  "codigo": 400,
+  "erro": "Bad Request"
+}

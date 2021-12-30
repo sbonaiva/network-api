@@ -1,0 +1,14 @@
+{
+  "oferta": [
+    {
+      "item": "comida",
+      "quantidade": 1
+    }
+  ],
+  "procura": [
+    {
+      "item": "arma",
+      "quantidade": 5
+    }
+  ]
+}

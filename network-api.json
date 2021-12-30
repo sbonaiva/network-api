@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "d4d87ada-99fc-4919-8b32-3d43fb21ea2f",
+		"name": "network-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adicionar rebelde",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"João\",\n    \"idade\": 10,\n    \"genero\": \"M\",\n    \"localizacao\": {\n        \"galaxia\": \"xpto\",\n        \"latitude\": -22.143766,\n        \"longitude\": -22.143766\n    },\n    \"inventario\": [\n        {\n            \"item\": \"comida\",\n            \"quantidade\": 10\n        },\n        {\n            \"item\": \"arma\",\n            \"quantidade\": 15\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rebeldes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rebeldes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar localização",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"galaxia\": \"xptox\",\n    \"latitude\": -22.143766,\n    \"longitude\": -22.143766\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rebeldes/1/localizacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rebeldes",
+						"1",
+						"localizacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reportar traidor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rebeldes/1/reportar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rebeldes",
+						"1",
+						"reportar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negociar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"oferta\": [\n        {\n            \"item\": \"arma\",\n            \"quantidade\": 1\n        }\n    ],\n    \"procura\": [\n        {\n            \"item\": \"comida\",\n            \"quantidade\": 4\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rebeldes/1/negociar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rebeldes",
+						"1",
+						"negociar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Relatório",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"oferta\": [\n        {\n            \"item\": \"arma\",\n            \"quantidade\": 1\n        }\n    ],\n    \"procura\": [\n        {\n            \"item\": \"comida\",\n            \"quantidade\": 4\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/rebeldes/relatorio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rebeldes",
+						"relatorio"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
